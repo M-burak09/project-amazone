@@ -1,0 +1,86 @@
+nav {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0px auto;
+  height: 50px;
+  position: relative;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+  line-height: 50px;
+  text-align: left;
+}
+
+.navigatie_links, .navigatie_rechts {
+  color: white;
+  font-family: monospace;
+  text-decoration: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.navigatie_midden {
+  border-radius: 10px;
+  margin-top: 12.5px;
+  width: 70%;
+  height: 50%;
+  background-color: #cccccc;
+  opacity: 0.8;
+}
+.navigatie_midden_progress {
+  border-radius: 10px;
+  width: 10%;
+  height: 100%;
+  background-color: #333;
+}
+.navigatie_midden_progress_icon {
+  transform: translate(-20px, -2px);
+  margin-left: 100%;
+  width: 26px;
+  background-color: #980000;
+  border: 1px solid white;
+  height: 26px;
+  border-radius: 50px;
+  animation: progress 1s ease-in-out infinite alternate;
+}
+
+i {
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 5px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.icon {
+  width: 20px;
+  margin-bottom: 7.5px;
+  margin-left: 3px;
+}
+
+i:hover {
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 5px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.navigatie_rechts:hover {
+  color: black;
+}
+
+@keyframes progress {
+  from {
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+  }
+  to {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+    background-color: #b32d00;
+  }
+}
+
+/*# sourceMappingURL=navigatie.css.map */

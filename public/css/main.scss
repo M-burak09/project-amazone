@@ -1,0 +1,506 @@
+@import 'reset';
+@import 'variabelen';
+@import 'buttons';
+@import 'media';
+@import 'navigatie';
+
+body{
+  background-color: $background-color;
+  margin: 0 auto;
+  text-align: center;
+  font-family: $font;
+
+
+
+  &.dark{
+    background-color: black;
+  }
+}
+
+.header{
+
+    background-color: $action-color;
+    color: $secondary-color;
+    font-size: $font-size;
+    padding:$padding;
+    padding-top: $padding * 2;
+    padding-bottom: $padding * 2;
+}
+
+.titel{
+  background-color: $primary-color;
+  color: $secondary-color;
+  width: 90%;
+  margin: 0 auto;
+  font-size: $font-size *1.2  ;
+  border-radius: 5px;
+  margin-top: $padding * 2;
+  margin-bottom: $padding * 2;
+
+  &_heading{
+    padding: 2%;
+  }
+}
+div.container{
+  background-color: $secondary-color;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 150%;
+  box-shadow: 0px 0px 28px -5px rgba(0,0,0,1);
+
+  &_header{
+    background-color: $primary-color;
+    color: $secondary-color;
+    font-size: $font-size*1.2;
+    padding:$padding;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    line-height: 115%;
+  }
+
+  &_knop{
+    position: relative;
+  }
+
+  &_down{
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-top: -10px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  }
+
+  &_up{
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-top: -10px;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  display: none;
+  }
+
+  &_tekst{
+    font-size: 0.9em;
+    border-radius: 5px;
+    padding: 5%;
+    line-height: 150%;
+    text-align: left;
+
+    &_moord{
+      text-align: center;
+    }
+
+    &_video {
+      position: relative;
+
+      &_tekst {
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+        text-align: center;
+        color: $secondary-color;
+        animation: scale 2s ease-in-out infinite alternate;
+      }
+    }
+  }
+}
+
+.tekst_center{
+  font-size: 0.9em;
+  border-radius: 10px;
+  padding: 5%;
+  line-height: 150%;
+  text-align: center;
+}
+
+#opacity{
+  background: rgba(255,255,255,0.3);
+  color: $secondary-color;
+  margin-top: 40%;
+}
+
+#schietDisplay, #naschietDisplay{
+  background-color: black;
+}
+
+
+.showKaart, .showMoord{
+  opacity: 1;
+  transition: opacity 5000ms;
+
+}
+
+.hideKaart{
+  opacity: 0;
+}
+
+.hideMoord{
+  display: none;
+}
+
+p{
+  font-size: $font-size;
+  line-height: 125%;
+
+  &.padding_bottom{
+    margin-bottom: $padding;
+  }
+
+  &.moord{
+      font-size: $font-size * 1.3;
+      line-height: 100%;
+  }
+  &.center{
+    text-align: center;
+  }
+}
+
+
+
+font.red{color:#980000; font-weight: bold;}
+font.yellow{color:#ffcc00; font-weight: bold;}
+
+
+.counter, .counterMoord{
+  margin: auto;
+  margin-top: 15%;
+  margin-bottom: 15%;
+  width: 40%;
+  border: 1px solid $action-color;
+  display: flex;
+  border-radius: 10px;
+  background-color: black;
+
+  &_number{
+    padding: $padding;
+    color: $secondary-color;
+    font-size: $font-size * 1.5;
+    margin: auto;
+
+  }
+}
+
+
+.counterMoord{
+  width: 66%;
+
+  &_number{
+    font-size: $font-size * 2;
+    animation: moord 1s  ease-in;
+  }
+}
+
+ .displayNone{
+  display: none;
+
+}
+
+.fade{
+  animation: fade 1.5s  ease-in;
+}
+
+@keyframes fade{
+  from{opacity: 0;}
+  to{opacity:1;}
+}
+
+@keyframes moord{
+  from{opacity: 0;}
+  to{opacity:1;}
+}
+
+@keyframes scale{
+  from{transform: scale(0.98);}
+  to{}
+}
+
+
+ul.button, .hoofdpagina{
+  position: relative;
+}
+
+#item
+{
+	display: none;
+	opacity: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	transition: opacity 300ms;
+}
+
+#item.is-visible
+{
+	display: block;
+	opacity: 100;
+  border-radius:5px;
+
+}
+
+#itemDialog
+{
+	position: fixed;
+	top: 0vh;
+  background-color: $background-color;
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 5px;
+  margin-top: 50%;
+}
+
+#itemBackground
+{
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+#itemFlow{
+  overflow-x: hidden;
+  overflow-x: auto;
+  border-radius: 5px;
+  height: 50vh;
+
+}
+
+#item h1
+{
+  background-color: $action-color;
+  color: $secondary-color;
+  font-size: $font-size*1.2;
+  padding:$padding;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+
+#itemDescription
+{
+  background-size: 100%;
+  color: white;
+  border-radius: 5px;
+  padding: 5%;
+  line-height: 150%;
+  text-align: left;
+}
+
+#itemImage{
+  padding-top: 5%;
+  width: 80%;
+  border-radius: 5px;
+
+}
+#itemCancel
+{
+  text-decoration: none;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  right:0;
+  top:0;
+  font-size: $font-size * 1.3;
+  color: #FFFFFF;
+}
+
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation:
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+
+
+
+#h1 {
+  text-transform: uppercase;
+  letter-spacing: 1pt;
+  font-size: 30pt;
+  margin-bottom: 15px;
+}
+
+#p {
+  text-align: left;
+  margin: 0;
+  text-transform: lowercase;
+  font-size: 10pt;
+  font-weight: 900;
+  width: 50%;
+  display: none;
+}
+
+#table {
+	display: table;
+	width: 100%;
+	height: 100%;
+  background-color: #e5e5e5;
+}
+
+#centeralign {
+	display: table-cell;
+	vertical-align: middle;
+}
+#container_header, #container_header2{
+  background-color: $action-color;
+}
+div.container_tekst_voetbalveld {
+  position: relative;
+  width: 100%;
+}
+
+div.container_tekst_voetbalveld_item{
+  float: left;
+  margin-bottom: 5%;
+  width: 20%;
+}
+
+img.voetbalveld, p.voetbalveld{
+  width: 100%;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+div.container_tekst_voetbalveld_item:nth-child(2) > img {
+  animation-delay: 2s;
+}
+
+div.container_tekst_voetbalveld_item:nth-child(3) > img {
+  animation-delay: 3s;
+}
+
+div.container_tekst_voetbalveld_item:nth-child(4) > img {
+  animation-delay: 3.95s;
+}
+
+div.container_tekst_voetbalveld_item:nth-child(5) > img {
+  animation-delay: 4.80s;
+}
+
+div.container_tekst_voetbalveld_item:nth-child(6) > img {
+  animation-delay: 5.6s;
+}
+
+div.container_tekst_voetbalveld_item:nth-child(7) > img {
+  animation-delay: 6.4s;
+}
+
+div.container_tekst_voetbalveld_item:nth-child(8) > img {
+  animation-delay: 7.1s;
+}
+
+div.container_tekst_voetbalveld_item:nth-child(9) > img {
+  animation-delay: 7.75s;
+}
+
+div.container_tekst_voetbalveld_item:nth-child(10) > img {
+  animation-delay: 8.4s;
+}
+
+div.container_tekst_voetbalveld_item:nth-child(11) > img {
+  animation-delay: 9s;
+}
+
+div.container_tekst_voetbalveld_item:nth-child(12) > img {
+  animation-delay: 9.5s;
+}
+
+div.container_tekst_voetbalveld_item:nth-child(13) > img {
+  animation-delay: 10s;
+}
+
+div.container_tekst_voetbalveld_item:nth-child(14) > img {
+  animation-delay: 10.5s;
+}
+
+div.container_tekst_voetbalveld_item:nth-child(15) > img {
+  animation-delay: 10.9s;
+}
+
+div.container_tekst_voetbalveld_item:nth-child(16) > img {
+  animation-delay: 11.25s;
+}
+
+div.container_tekst_voetbalveld_item:nth-child(17) > img {
+  animation-delay: 11.55s;
+}
+
+div.container_tekst_voetbalveld_item:nth-child(18) > img {
+  animation-delay: 11.8s;
+}
+
+div.container_tekst_voetbalveld_item:nth-child(19) > img {
+  animation-delay: 12s;
+}
+
+div.container_tekst_voetbalveld_item:nth-child(20) > img {
+  animation-delay: 12.35s;
+}
+
+div.container_tekst_voetbalveld_tekst:nth-child(21) > p {
+  animation-delay:13s;
+}
+div.container_tekst_voetbalveld_tekst:nth-child(22) > p {
+  animation-delay:18s;
+}
+div.container_tekst_voetbalveld_tekst:nth-child(23) > p {
+  animation-delay:22s;
+}
+div.container_tekst_voetbalveld_tekst:nth-child(24) > p {
+  animation-delay:25s;
+}
+
+.shadow{
+  text-shadow: 2px 2px 8px black;
+}
+.eindFade{
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 4s;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+}
+
+p.eindFade{
+  font-style: italic;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+div.eind{
+  margin-top: 35vh;
+}
+
+@import 'responsive';

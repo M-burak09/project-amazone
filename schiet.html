@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang = "nl" >
+<head>
+  <meta charset = "UTF-8">
+  <meta name= "viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.min.css">
+  <script type = "text/javascript" src="js/main.min.js"></script>
+  <script type = "text/javascript" src="js/typewrite.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <title> Amazonebranden </title>
+</head>
+
+<body class ="dark">
+  <nav id="myHeader">
+    <a class = "navigatie_links" onclick="history.back(-1)"> <i></i></a>
+    <div class = "navigatie_midden">
+      <div class = "navigatie_midden_progress" id = "progress">
+        <div class ="navigatie_midden_progress_icon"><img class="icon" src="media/fire.png" alt="earth"></div>
+      </div>
+    </div>
+    <a class = "navigatie_rechts" href="index.html"> X </a>
+  </nav>
+
+  <div class ="counter" id="counterMoord">
+    <div class ="counter_foto" > <img class = 'counter_foto' id="counterMoord_foto" src="media/skull.jpg" alt="skull"> </div>
+    <div class ="counter_number" id="counter_number"> 0 </div>
+  </div>
+  <div class ="container" id = "schietDisplay">
+    <div class="container_header" id ="container_header"> Dit is het perspectief van een van mijn stamleden die vermoord is door een boer.</div>
+    <img class = 'container_foto_schiet' src="media/pointedGun.png" alt="skull">
+    <audio id = "audio" src="media/Magnum_Shots.mp3"> </audio>
+  </div>
+    <button id = "schiet" onclick="showSchiet()" class ="doorgaan">Schiet</button>
+
+  <div class ="container hideKaart"  id = "naschietDisplay">
+    <div class="container_header" id ="container_header2"> Klik op een stip om meer te lezen over een moord.</div>
+    <ul class = "button">
+      <li><img class = 'container_foto_schiet' src="media/amazonMap.jpg" alt="amazonMap"></li>
+      <li id = "button1" class="button button1" onclick="tellerUp1()" data-id="1" data-title="Javari-vallei" data-description="Acht tot tien leden van een inheemse stam in de Javari-vallei, in noordwest Brazilië, zijn omgebracht door illegale goudzoekers. De Braziliaanse autoriteiten onderzoeken de moord op de Amazone-indianen. Afgelopen maand kwamen de eerste geruchten op gang, maar het werd pas nieuws nadat de gouddelvers zelf in het dichtstbijzijnde stadje begonnen op te scheppen over de slachting. De Braziliaanse overheidsinstantie voor inheemse zaken, Fundação Nacional do Índio (FUNAI), ondervroeg de lokale bevolking en bracht de zaak vervolgens naar de politie.
+      Onder de slachtoffers bevinden zich ook vrouwen en kinderen. Volgens Leila Silvia Burger Sotto-Maior, coördinator van FUNAI, pochten de goudzoekers dat zij de lichamen in stukken hebben gesneden en in de rivier gegooid.">
+      </li>
+      <li id = "button2" class="button button2" onclick="tellerUp2()" data-id="2" data-title="Emyra Wajãpi" data-description="Zo'n 50 illegale goudzoekers zijn deze week het reservaat van de Wajãpi-stam in het Amazonegebied in het noorden van Brazilië binnengedrongen. Eén van de leiders, Emyra Wajãpi, is vermoord, waarna de rest van de stam vluchtte. De federale politie onderzoekt de zaak. De gebieden van de stammen bevatten veel grondstoffen. Illegale mijnwerkers, garimpeiros in het Portugees, proberen er al decennia goud te delven. Door die goudwinning worden bossen verwoest en de rivieren vervuild. De grondstoffendelving in de Amazone is nu op een hoogtepunt. President Bolsonaro moedigt die delving aan en wil het legaliseren.
+
+      In de nederzetting Mariry werd het lichaam van Emyra Wajãpi gevonden. Hij bleek te zijn doodgestoken. Het dorpje ligt in de buurt van de Amapá-regio, waar het reservaat van de Wajãpi is, in het noorden van Brazilië, aan de grens met Frans Guyana en Suriname. De goudzoekers zouden het dorp hebben overgenomen. De garimpeiros zijn zwaarbewapend, zegt het 26-jarige stamlid Kureni Wajãpi tegen The Guardian. Ze hebben machinegeweren. Bolsonaro heeft de aanval aangemoedigd, vindt het stamlid. Dit komt door de president. Hij bedreigt de inheemse volken van Brazilië.">
+      </li>
+      <li id = "button3" class="button button3" onclick="tellerUp3()" data-id="3" data-title="Areira, Pará" data-description="Rond de nederzetting Areia in de staat Pará werden sinds 2011 zeker vier mensen vermoord. Bewoner Jõao Carlos Baú werkte eerst als houthakker, maar kreeg niet volgens afspraak betaald. Hij en twee collega's dreigden daarom de illegale houtkap en de slechte arbeidsomstandigheden te melden bij de overheid. Volgens dorpsbewoners werd het drietal kort daarna om het leven gebracht door andere houthakkers.
+
+      Een vierde oud-houthakker werd doodgeschoten nadat hij bij het Openbaar Ministerie van Brazilië geluidsopnames had laten horen van een groep die betrokken was bij illegale houtkap.">
+      </li>
+    </ul>
+  </div>
+
+  <button id = "moord" onclick="showMoord()" class ="doorgaan moord">Doorgaan</button>
+
+  <div class="hideMoord" id = "moordDisplay">
+  <div class ="container" id = "opacity">
+    <div class ="container_tekst">
+      <p id ="displayNone"> Dit zijn de aantal onschuldige natuuractivisten en inheemse bewoners die de afgelopen 20 jaar vermoord zijn door boeren die op een illegale wijze land overnemen. Met ieder een eigen verhaal. Bij de meeste gevallen zijn de boeren niet veroordeeld. Van de afgelopen 10 jaar, waarbij meer dan 300 doden vielen zijn er slechts 14 veroordeeld. Dit mag ons niet aangedaan worden!</p>
+    </div>
+  </div>
+  </div>
+
+  <button id ="help" onclick="location.href='help.html'" class ="doorgaan moord">Doorgaan</button>
+
+  <div id="item">
+    <div id="itemBackground"></div>
+    <div id="itemDialog">
+      <a id = itemCancel href="#"> X </a>
+      <h1 id="itemTitle"> </h1>
+      <div id="itemFlow">
+        <img id="itemImage" src="itemImage" alt="item">
+        <p id="itemDescription"></p>
+      </div>
+    </div>
+  </div>
+
+  <video class = "moord" autoplay muted loop>
+    <source src="media/moord1.mp4" type="video/mp4">
+  </video>
+    <audio id ="volume" src="media/wind.mp3"  autoplay loop> </audio>
+</body>
+
+</html>

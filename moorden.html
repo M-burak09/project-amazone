@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang = "nl" >
+<head>
+  <meta charset = "UTF-8">
+  <meta name= "viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.min.css">
+  <script type = "text/javascript" src="js/main.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <title> Amazonebranden </title>
+</head>
+
+<body class ="dark">
+  <nav id="myHeader">
+    <a class = "navigatie_links" onclick="history.back(-1)"> <i></i></a>
+    <div class = "navigatie_midden">
+      <div class = "navigatie_midden_progress" id = "progress">
+        <div class ="navigatie_midden_progress_icon"><img class="icon" src="media/fire.png" alt="earth"></div>
+      </div>
+    </div>
+    <a class = "navigatie_rechts" href="index.html"> X </a>
+  </nav>
+
+  <div class ="counter">
+    <div class = "counter_foto"> <img class = 'counter_foto' src="media/skull.jpg" alt="skull"> </div>
+    <div class ="counter_number" id="counter_number"> 0 </div>
+  </div>
+  <div class = 'container' id='opacity'>
+    <div class = 'container_tekst'>
+      <div class = 'container_tekst_moord'>
+        <p class ="moord"> Dit is niet het enige probleem dat wij meemaken, er is namelijk nog meer. Wil je weten wat het is?</p>
+      </div>
+    </div>
+  </div>
+    <button onclick="location.href='schiet.html'" type="button" class ="doorgaan">Doorgaan</button>
+  <audio id = "volume" src="media/wind.mp3" autoplay loop> </audio>
+
+  <video class = "moord" autoplay muted loop>
+    <source src="media/forest.mp4" type="video/mp4">
+  </video>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang = "nl" >
+<head>
+  <meta charset = "UTF-8">
+  <meta name= "viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.min.css">
+  <script type = "text/javascript" src="js/main.min.js"></script>
+  <script type = "text/javascript" src="js/typewrite.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <title> Amazonebranden </title>
+</head>
+
+<body>
+  <nav id="myHeader">
+    <a class = "navigatie_links" onclick="history.back(-1)"> <i></i></a>
+    <div class = "navigatie_midden">
+      <div class = "navigatie_midden_progress" id = "progress">
+        <div class ="navigatie_midden_progress_icon"><img class="icon" src="media/fire.png" alt="earth"></div>
+      </div>
+    </div>
+    <a class = "navigatie_rechts" href="index.html"> X </a>
+  </nav>
+
+  <div class = 'container'>
+    <div class = 'container_header'>
+      <h1 class = 'container_header_heading'> Raimundo Mura, inwoner amazone, Mura stam </h1>
+    </div>
+    <div class = 'container_foto'> <img class = 'container_foto' src="media/personage1.jpg" alt="personage1"> </div>
+    <div class = 'container_tekst'>
+      <div id="animatie" class="meer" onclick="typeWrite()">Wie ben ik?</div>
+      <p class = "displayNone" id="displayNone"> Ik ben Raimundo Mura, de leider van de Mura stam. Ons leefgebied wordt bedreigd door de amazonebranden die zich plaatsvinden. Dit komt door de boeren die op een illegale manier bosbranden veroorzaken. Niet alleen ons leefgebied is in gevaar, maar ook ons toekomst en het voortbestaan van ons leefwijze. </p>
+    </div>
+    </div>
+    <div class = 'container displayNone' id="displayNone1">
+    <div class = 'container_tekst'>
+      <div id="animatie1" class="meer displayNone" onclick ="displayText()">Wat gebeurd er?</div>
+      <p class ="displayNone" id="displayNone2"> Wat hier gedaan wordt is een gruweldaad tegenover ons. Dit is verwoesting van ons leefgebied. Al deze bomen hadden allemaal moeten leven, allemaal op hun eigen plek. Ik denk aan de toekomstige generatie, aan al onze kleinkinderen. We zullen niet hetzelfde lucht ademen als de lucht die we nu ademen. Als dit land niet wordt beschermt zullen de mensen samen met alles verdwijnen. We hebben al jaren weerstand geboden terwijl er geen toegang was met wegen, er elektriciteit kwam en de invasies van start gingen. Met iedere voorbijgaande dag wordt de verwoesting als maar erger. Ontbossing, invasies moorden en noem maar op. Dit gebied geeft ons kracht en als het nodig is zal ik doorgaan tot mijn laatste druppel bloed! </p>
+      <div class = 'container_tekst_video displayNone' id="displayNone3">
+        <video class = 'vuur' autoplay loop muted>
+          <source src="media/fireVideo.mp4" type="video/mp4">
+        </video>
+        <div class="container_tekst_video_tekst">
+          <p class = "video">Ons leefgebied staat onder vuur en vlam. We worden weggejaagd en de overheid doet er werkelijk niets aan.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button id="displayNone4" onclick="location.href='moorden.html'" type="button" class ="displayNone">Doorgaan</button>
+  <audio src="media/fire.mp3" autoplay loop> </audio>
+</body>
+</html>

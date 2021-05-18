@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang = "nl" >
+<head>
+  <meta charset = "UTF-8">
+  <meta name= "viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.min.css">
+  <script type = "text/javascript" src="js/main.min.js"></script>
+  <script type = "text/javascript" src="js/typewrite.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <title> Amazonebranden </title>
+</head>
+
+<body>
+  <nav id="myHeader">
+    <a class = "navigatie_links" onclick="history.back(-1)"> <i></i></a>
+    <div class = "navigatie_midden">
+      <div class = "navigatie_midden_progress" id = "progress">
+        <div class ="navigatie_midden_progress_icon"><img class="icon" src="media/fire.png" alt="earth"></div>
+      </div>
+    </div>
+    <a class = "navigatie_rechts" href="index.html"> X </a>
+  </nav>
+
+  <div class = 'container'>
+    <div class = 'container_header'>
+      <h1 class = 'container_header_heading'> Marcos Mayoruna, inwoner amazone, matsés stam </h1>
+    </div>
+    <div class = 'container_foto'> <img class = 'container_foto' src="media/personage2.jpg" alt="personage2"> </div>
+    <div class = 'container_tekst'>
+      <div id="animatie" class="meer" onclick="typeWrite()">Wie ben ik?</div>
+      <p class = "displayNone" id="displayNone"> Ik ben Marcos Mayoruna, zoon van de leider van de Matsés stam.  Ons leefgebied wordt bedreigd door de amazonebranden die plaatsvinden. Dit gebeurt door de boeren die op een illegale wijze bosbranden veroorzaken. Niet alleen ons leefgebied is in gevaar, maar ook ons toekomst en het voortbestaan van ons leefwijze. </p>
+
+    </div>
+    </div>
+    <div class = 'container displayNone' id="displayNone1">
+    <div class = 'container_tekst'>
+      <div id="animatie1" class="meer displayNone" onclick ="displayText()">Wat gebeurd er?</div>
+      <p class ="displayNone" id="displayNone2"> We bevinden ons in een situatie van groot gevaar. President Bolsonaro bewijst de grootste vijand te zijn van de inheemse bevolkingsgroepen. De droom van de huidige regering is om de inheemse bevolkingsgroepen uit te roeien, zodat ze ons land kunnen innemen. We worden gedwongen om uit ons leefgebied te vertrekken. Dit doen ze door ons te ontnemen van gezondheidszorg en onderwijs. Daarnaast beschermen ze ons ook niet tegen het binnendringen van ons leefgebied door buitenstaanders. Bolsonaro denkt alleen aan geld. Hij denkt alleen aan ontbossing. Het bos is er niet alleen voor ons(de inheemse bevolkingsgroepen), Het is er voor iedereen. </p>
+      <div class = 'container_tekst_video displayNone' id="displayNone3">
+        <video class = 'vuur' autoplay loop muted>
+          <source src="media/fireVideo.mp4" type="video/mp4">
+        </video>
+        <div class="container_tekst_video_tekst">
+          <p class = "video">Ons leefgebied staat onder vuur en vlam. We worden weggejaagd en de overheid doet er werkelijk niets aan.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button id="displayNone4" onclick="location.href='moorden.html'" type="button" class ="displayNone">Doorgaan</button>
+  <audio src="media/fire.mp3" autoplay loop> </audio>
+</body>
+</html>

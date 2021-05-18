@@ -1,0 +1,231 @@
+@import 'variabelen';
+
+button {
+  text-decoration: none;
+  border-style: none;
+  box-shadow: 0px 0px 15px -5px rgba(0,0,0,1);
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: $font-size;
+
+  &.kies{
+    color: $secondary-color;
+    background-color: $action-color;
+    padding: 10px 30px;
+    width: 50%;
+    margin-top: $padding;
+    margin-bottom: $padding * 2;
+    border: 1px solid $secondary-color;
+  }
+
+  &.doorgaan{
+    color: $secondary-color;
+    background-color: $action-color;
+    padding: 10px 30px;
+    width: 40%;
+    margin-top: $padding;
+    margin-bottom: $padding * 2;
+    border: 1px solid $secondary-color;
+  }
+
+  &.moord{
+    width: 40vw;
+    margin: auto;
+    margin-top: 10vh;
+    display: none;
+    margin-top: $padding;
+    margin-bottom: $padding * 2;
+  }
+
+  &.hoofdpagina_button{
+    border: 1px solid $secondary-color;
+    background-color: $action-color;
+    opacity: 0.75;
+    width: $rondSize *2.5;
+    height: $rondSize *2.5;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    top:70%;
+    left: 65%;
+    animation: homeButton 5s ease-in-out infinite alternate;
+  }
+
+  &.helpNiet{
+    color: $secondary-color;
+    background-color: $background-color;
+    padding: 10px 30px;
+    width: 40vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid $secondary-color;
+    //display: none;
+  }
+
+  &.helpWel{
+   color: $secondary-color;
+   background-color: $action-color;
+   padding: 10px 30px;
+   width: 40vw;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   border: 1px solid $secondary-color;
+ }
+
+ &.voetbalveld{
+   opacity: 0;
+   animation-name: fadeIn;
+   animation-duration: 4s;
+   animation-delay: 26s;
+   animation-iteration-count: 1;
+   animation-fill-mode: forwards;
+ }
+}
+
+
+
+.flex{
+  display:flex;
+  justify-content: space-around;
+}
+
+li.button{
+  text-decoration: none;
+  border-style: none;
+  border: 1px solid $secondary-color;
+  cursor: pointer;
+  background-color: $action-color;
+  width: $rondSize;
+  height: $rondSize;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  animation: btn 1s ease-in-out infinite alternate;
+
+
+  &1{
+    top:75%;
+    left: 35%;
+  }
+
+  &2{
+    top:40%;
+    left: 60%;
+  }
+
+  &3{
+    top:75%;
+    left: 75%;
+  }
+}
+
+a.p{
+  font-size: $font-size;
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+
+}
+
+a.p:hover{
+  color: $primary-color;
+}
+
+.meer {
+  font-size: $font-size;
+  text-align: center;
+  animation: glow 1.5s  ease-in-out infinite alternate;
+  width: 50%;
+  background-color: $primary-color;
+  color: white;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 5px;
+  box-shadow: 0px 0px 15px -5px rgba(0,0,0,1);
+  cursor: pointer;
+}
+
+.meerStop{
+  font-size: $font-size;
+  text-align: center;
+  width: 50%;
+  background-color: $primary-color;
+  opacity: 0.5;
+  color: white;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+div.eindFade{
+  text-decoration: none;
+  box-shadow: 0px 0px 15px -5px rgba(0,0,0,1);
+  border-radius: 5px;
+  color: $secondary-color;
+  background-color: $action-color;
+  padding: 10px 30px;
+  margin: auto;
+  width: 40%;
+  margin-top: $padding;
+  margin-bottom: $padding * 2;
+  border: 1px solid $secondary-color;
+}
+
+button:hover, li.button:hover{
+  opacity: 0.8;
+}
+
+.meer:hover{
+  background-color: #46624C;
+}
+
+ .eindFade{
+  cursor: default;
+}
+
+.container_down:hover{
+  border: solid $action-color;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-top: -10px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  }
+
+  .container_up:hover{
+  border: solid $action-color;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-top: -10px;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  display: none;
+  }
+
+
+@keyframes glow {
+  from{opacity: 0.7;}
+  to{}
+}
+
+@keyframes btn{
+  from{box-shadow: 0 0 0 0px rgba(255,255,255,0.3);}
+  to{box-shadow: 0 0 0 5px rgba(255,255,255,0.3);}
+
+}
+
+@keyframes homeButton{
+  from{box-shadow: 0 0 0 0px rgba(255,255,255,0.3);}
+  to{box-shadow: 0 0 0 5px rgba(255,255,255,0.3);background-color:#cc6600;}
+
+}

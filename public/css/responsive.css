@@ -1,0 +1,295 @@
+@media (max-width: 400px) and (max-height: 720px) {
+  img.hoofdpagina_foto {
+    margin-top: 18vh;
+  }
+
+  button.hoofdpagina_button {
+    top: 66%;
+  }
+
+  p {
+    font-size: 14.4px;
+  }
+
+  #opacity {
+    margin-top: 15vh;
+  }
+}
+@media (min-width: 600px) {
+  nav {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
+
+  .navigatie_midden {
+    width: 55%;
+  }
+
+  div.container {
+    width: 75%;
+    line-height: 150%;
+  }
+  div.container_header {
+    font-size: 20.8px;
+    padding: 15px;
+  }
+
+  .titel {
+    width: 75%;
+    font-size: 24px;
+  }
+
+  .header {
+    font-size: 22.4px;
+  }
+
+  img.hoofdpagina_foto {
+    width: 70%;
+    margin-top: 20vh;
+  }
+  img.container_foto {
+    width: 75%;
+  }
+  img.counter_foto {
+    height: 7vh;
+  }
+
+  p {
+    font-size: 17.6px;
+  }
+  p.padding_bottom {
+    margin-bottom: 20px;
+  }
+
+  a.p {
+    font-size: 17.6px;
+  }
+
+  button {
+    font-size: 17.6px;
+  }
+  button.hoofdpagina_button {
+    width: 105px;
+    height: 105px;
+    top: 67%;
+    left: 59%;
+  }
+  button.doorgaan {
+    width: 30%;
+  }
+  button.helpWel, button.helpNiet {
+    width: 31.5vw;
+  }
+
+  div.eindFade {
+    width: 30%;
+  }
+
+  .flex {
+    justify-content: space-evenly;
+  }
+
+  li.button {
+    width: 45px;
+    height: 45px;
+  }
+
+  .meer, .meerStop {
+    font-size: 17.6px;
+    width: 35%;
+  }
+
+  .counter, .counterMoord {
+    width: 30%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .counter_number, .counterMoord_number {
+    font-size: 32px;
+  }
+
+  .counterMoord {
+    width: 40%;
+  }
+  .counterMoord_number {
+    font-size: 40px;
+  }
+
+  #opacity {
+    margin-top: 20%;
+  }
+
+  #itemDialog {
+    top: 0vh;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-top: 35%;
+  }
+
+  #item h1 {
+    font-size: 24px;
+    padding: 15px;
+  }
+
+  #itemImage {
+    width: 70%;
+  }
+}
+@media (min-width: 1200px) {
+  nav {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  div.container {
+    width: 50%;
+    line-height: 150%;
+  }
+  div.container_header {
+    font-size: 24px;
+    padding: 15px;
+  }
+
+  div.desktop_grid {
+    width: 87%;
+  }
+
+  .grid {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  p {
+    font-size: 19.2px;
+  }
+
+  a.p {
+    font-size: 19.2px;
+  }
+
+  img.hoofdpagina_foto {
+    width: 40%;
+    margin-top: 10vh;
+  }
+  img.counter_foto {
+    height: 7vh;
+  }
+  img.container_foto {
+    width: 60%;
+  }
+  img.counterMoord_foto {
+    height: 15vh;
+  }
+
+  .header {
+    font-size: 27.2px;
+  }
+
+  .titel {
+    margin-top: 30px;
+    width: 75%;
+    font-size: 28.8px;
+  }
+
+  button {
+    font-size: 19.2px;
+  }
+  button.hoofdpagina_button {
+    width: 105px;
+    height: 105px;
+    top: 60%;
+    left: 56%;
+  }
+  button.doorgaan {
+    width: 20%;
+  }
+  button.helpNiet {
+    width: 20vw;
+    margin-right: 5%;
+  }
+  button.helpWel {
+    width: 20vw;
+    margin-left: 5%;
+  }
+
+  div.eindFade {
+    width: 20%;
+  }
+
+  .flex {
+    justify-content: center;
+  }
+
+  li.button {
+    width: 36px;
+    height: 36px;
+  }
+
+  .meer, .meerStop {
+    font-size: 19.2px;
+    width: 30%;
+  }
+
+  .counter, .counterMoord {
+    width: 17.5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .counter_number, .counterMoord_number {
+    font-size: 35.2px;
+  }
+
+  .counterMoord {
+    width: 25%;
+    margin-bottom: -7.5%;
+    margin-top: 5%;
+  }
+  .counterMoord_number {
+    font-size: 44.8px;
+  }
+
+  div.container_tekst_voetbalveld_item {
+    width: 10%;
+  }
+
+  .navigatie_midden {
+    width: 40%;
+  }
+
+  #schietDisplay, #naschietDisplay {
+    width: 35%;
+  }
+
+  #container_header, #container_header2 {
+    font-size: 24px;
+  }
+
+  #opacity {
+    margin-bottom: 5%;
+    margin-top: 12.5%;
+  }
+
+  #itemDialog {
+    top: 0vh;
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 12.5%;
+  }
+
+  #itemBackground {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  #itemImage {
+    width: 60%;
+  }
+}
+@media (min-width: 1366px) {
+  video.eind {
+    max-height: 115%;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */

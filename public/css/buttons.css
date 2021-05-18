@@ -1,0 +1,221 @@
+button {
+  text-decoration: none;
+  border-style: none;
+  box-shadow: 0px 0px 15px -5px black;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+button.kies {
+  color: white;
+  background-color: #980000;
+  padding: 10px 30px;
+  width: 50%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid white;
+}
+button.doorgaan {
+  color: white;
+  background-color: #980000;
+  padding: 10px 30px;
+  width: 40%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid white;
+}
+button.moord {
+  width: 40vw;
+  margin: auto;
+  margin-top: 10vh;
+  display: none;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+button.hoofdpagina_button {
+  border: 1px solid white;
+  background-color: #980000;
+  opacity: 0.75;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  top: 70%;
+  left: 65%;
+  animation: homeButton 5s ease-in-out infinite alternate;
+}
+button.helpNiet {
+  color: white;
+  background-color: #333;
+  padding: 10px 30px;
+  width: 40vw;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid white;
+}
+button.helpWel {
+  color: white;
+  background-color: #980000;
+  padding: 10px 30px;
+  width: 40vw;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid white;
+}
+button.voetbalveld {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 4s;
+  animation-delay: 26s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+li.button {
+  text-decoration: none;
+  border-style: none;
+  border: 1px solid white;
+  cursor: pointer;
+  background-color: #980000;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  animation: btn 1s ease-in-out infinite alternate;
+}
+li.button1 {
+  top: 75%;
+  left: 35%;
+}
+li.button2 {
+  top: 40%;
+  left: 60%;
+}
+li.button3 {
+  top: 75%;
+  left: 75%;
+}
+
+a.p {
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+}
+
+a.p:hover {
+  color: #597D61;
+}
+
+.meer {
+  font-size: 16px;
+  text-align: center;
+  animation: glow 1.5s ease-in-out infinite alternate;
+  width: 50%;
+  background-color: #597D61;
+  color: white;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 5px;
+  box-shadow: 0px 0px 15px -5px black;
+  cursor: pointer;
+}
+
+.meerStop {
+  font-size: 16px;
+  text-align: center;
+  width: 50%;
+  background-color: #597D61;
+  opacity: 0.5;
+  color: white;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+div.eindFade {
+  text-decoration: none;
+  box-shadow: 0px 0px 15px -5px black;
+  border-radius: 5px;
+  color: white;
+  background-color: #980000;
+  padding: 10px 30px;
+  margin: auto;
+  width: 40%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid white;
+}
+
+button:hover, li.button:hover {
+  opacity: 0.8;
+}
+
+.meer:hover {
+  background-color: #46624C;
+}
+
+.eindFade {
+  cursor: default;
+}
+
+.container_down:hover {
+  border: solid #980000;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-top: -10px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.container_up:hover {
+  border: solid #980000;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-top: -10px;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  display: none;
+}
+
+@keyframes glow {
+  from {
+    opacity: 0.7;
+  }
+}
+@keyframes btn {
+  from {
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.3);
+  }
+  to {
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.3);
+  }
+}
+@keyframes homeButton {
+  from {
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.3);
+  }
+  to {
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.3);
+    background-color: #cc6600;
+  }
+}
+
+/*# sourceMappingURL=buttons.css.map */

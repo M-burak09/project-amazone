@@ -1,0 +1,330 @@
+@import 'variabelen';
+
+@media(max-width: 400px) and (max-height: 720px){
+  img{
+      &.hoofdpagina_foto{
+        margin-top: 18vh;
+      }
+    }
+
+    button{
+      &.hoofdpagina_button{
+        top:66%;
+      }
+    }
+
+    p{
+      font-size: $font-size * 0.9;
+    }
+
+  #opacity{
+    margin-top: 15vh;
+  }
+}
+
+@media(min-width: 600px){
+  nav{
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
+
+  .navigatie_midden{
+    width: 55%;
+  }
+  div.container{
+    width: 75%;
+    line-height: 150%;
+
+    &_header{
+      font-size: $font-size * 1.3;
+      padding: $padding * 1.5;
+    }
+  }
+
+  .titel{
+    width: 75%;
+    font-size: $font-size * 1.5  ;
+}
+
+.header{
+    font-size: $font-size * 1.4;
+}
+
+  img{
+      &.hoofdpagina_foto{
+        width: 70%;
+        margin-top: 20vh;
+    }
+
+      &.container_foto{
+        width: 75%;
+    }
+
+      &.counter_foto{
+        height: 7vh;
+      }
+  }
+
+
+
+  p{
+    font-size: $font-size * 1.1;
+
+    &.padding_bottom{
+      margin-bottom: $padding * 2;
+    }
+  }
+
+  a.p{
+    font-size: $font-size * 1.1;
+  }
+
+  button{
+    font-size: $font-size * 1.1;
+
+    &.hoofdpagina_button{
+      width: $rondSize *3.5;
+      height: $rondSize *3.5;
+      top:67%;
+      left: 59%;
+    }
+
+    &.doorgaan{
+      width: 30%;
+    }
+
+    &.helpWel, &.helpNiet{
+      width: 31.5vw;
+    }
+  }
+
+  div.eindFade{
+    width: 30%;
+  }
+  .flex{
+    justify-content: space-evenly;
+  }
+
+  li.button{
+    width: $rondSize * 1.5;
+    height: $rondSize * 1.5;
+  }
+
+  .meer, .meerStop{
+    font-size: $font-size * 1.1;
+    width: 35%;
+  }
+
+  .counter, .counterMoord{
+    width: 30%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+    &_number{
+      font-size: $font-size * 2.0;
+    }
+  }
+
+  .counterMoord{
+    width: 40%;
+
+    &_number{
+      font-size: $font-size * 2.5;
+    }
+  }
+
+  #opacity{
+    margin-top: 20%;
+  }
+
+    #itemDialog
+  {
+  	top: 0vh;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-top: 35%;
+  }
+
+  #item h1
+  {
+
+    font-size: $font-size*1.5;
+    padding:$padding * 1.5;
+  }
+
+  #itemImage{
+    width: 70%;
+  }
+}
+
+@media(min-width: 1200px){
+  nav{
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  div.container{
+    width: 50%;
+    line-height: 150%;
+
+    &_header{
+      font-size: $font-size * 1.5;
+      padding: $padding * 1.5;
+    }
+  }
+
+  div.desktop_grid{
+    width: 87%;
+  }
+  .grid{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+  }
+
+  p{
+    font-size: $font-size * 1.2;
+  }
+
+  a.p{
+    font-size: $font-size * 1.2;
+  }
+
+  img{
+      &.hoofdpagina_foto{
+        width: 40%;
+        margin-top: 10vh;
+     }
+
+      &.counter_foto{
+        height: 7vh;
+      }
+
+      &.container_foto{
+        width: 60%;
+      }
+
+      &.counterMoord_foto{
+        height: 15vh;
+      }
+
+
+  }
+
+  .header{
+      font-size: $font-size * 1.7;
+  }
+
+  .titel{
+    margin-top: $padding * 3;
+    width: 75%;
+    font-size: $font-size * 1.8  ;
+}
+
+  button{
+    font-size: $font-size * 1.2;
+
+    &.hoofdpagina_button{
+      width: $rondSize *3.5;
+      height: $rondSize *3.5;
+      top:60%;
+      left: 56%;
+    }
+
+    &.doorgaan{
+      width: 20%;
+    }
+
+    &.helpNiet{
+      width: 20vw;
+      margin-right: 5%;
+    }
+    &.helpWel{
+      width: 20vw;
+      margin-left: 5%;
+    }
+  }
+
+  div.eindFade{
+    width: 20%;
+  }
+
+  .flex{
+    justify-content: center;
+  }
+
+  li.button{
+    width: $rondSize * 1.2;
+    height: $rondSize * 1.2;
+  }
+
+  .meer, .meerStop{
+    font-size: $font-size * 1.2;
+    width: 30%;
+  }
+
+  .counter, .counterMoord{
+    width: 17.5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+      &_number{
+        font-size: $font-size * 2.2;
+      }
+  }
+
+  .counterMoord{
+    width: 25%;
+    margin-bottom: -7.5%;
+    margin-top: 5%;
+
+    &_number{
+      font-size: $font-size * 2.8;
+    }
+  }
+
+  div.container_tekst_voetbalveld_item{
+    width: 10%;
+  }
+  .navigatie_midden{
+    width: 40%;
+  }
+
+
+  #schietDisplay, #naschietDisplay{
+    width: 35%;
+  }
+
+  #container_header, #container_header2{
+    font-size: $font-size * 1.5;
+  }
+
+  #opacity{
+    margin-bottom: 5%;
+    margin-top: 12.5%;
+  }
+
+  #itemDialog
+  {
+    top: 0vh;
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 12.5%;
+  }
+
+  #itemBackground
+  {
+  	background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  #itemImage{
+    width: 60%;
+  }
+
+}
+
+@media(min-width: 1366px){
+  video.eind{
+    max-height: 115%;
+  }
+}

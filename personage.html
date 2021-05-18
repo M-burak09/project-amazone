@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang = "nl" >
+<head>
+  <meta charset = "UTF-8">
+  <meta name= "viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.min.css">
+  <script type = "text/javascript" src="js/main.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <title> Amazonebranden </title>
+</head>
+
+<body>
+  <nav id="myHeader">
+    <a class = "navigatie_links" onclick="history.back(-1)"> <i></i></a>
+    <div class = "navigatie_midden">
+      <div class = "navigatie_midden_progress" id = "progress">
+        <div class ="navigatie_midden_progress_icon"><img class="icon" src="media/fire.png" alt="earth"></div>
+      </div>
+    </div>
+    <a class = "navigatie_rechts" href="index.html"> X </a>
+  </nav>
+
+  <div class = 'titel'>
+    <h1 class = 'titel_heading'> Kies de personage waarover je het verhaal wilt volgen. </h1>
+  </div>
+
+  <div class = "grid">
+    <div class = 'container desktop_grid'>
+      <div class = 'container_foto'> <img class = 'container_foto' src="media/personage1.jpg" alt="personage1"> </div>
+        <div class = "tekst_center">
+          <p class = "padding_bottom"> Raimundo Mura, inwoner amazone, Mura stam </p>
+          <button onclick="location.href='personageVerhaal2.html'" type="button" class ="kies">Kies</button>
+      </div>
+    </div>
+
+    <div class = 'container desktop_grid'>
+      <div class = 'container_foto'> <img class = 'container_foto' src="media/personage2.jpg" alt="personage1"> </div>
+        <div  class = 'tekst_center'>
+          <p class = "padding_bottom"> Marcos Mayoruna, inwoner amazone, matsés stam </p>
+          <button onclick="location.href='personageVerhaal1.html'" type="button" class ="kies">Kies</button>
+        </div>
+    </div>
+  </div>
+  <video class = "moord" autoplay muted loop>
+    <source src="media/forest.mp4" type="video/mp4">
+  </video>
+  <audio src="media/fire.mp3" autoplay loop> </audio>
+</body>
+</html>

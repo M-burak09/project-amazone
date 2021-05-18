@@ -1,0 +1,76 @@
+@import 'variabelen';
+img {
+  &.test{
+    width: 50px;
+  }
+  &.container_foto{
+  width: 90%;
+  margin-top: 5%;
+  border-radius: 10px;
+
+  &_schiet{
+    width: 100%;
+    margin-bottom: -2%;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius:10px;
+  }
+  }
+
+  &.counter_foto{
+    padding: $padding;
+    height: 5vh;
+    margin: auto;
+    padding-left: $padding * 1.5;
+  }
+
+  &.counterMoord_foto{
+    padding: $padding;
+    height: 10vh;
+    margin: auto;
+    padding-left: $padding * 1.5;
+  }
+
+  &.hoofdpagina_foto{
+    width: 100%;
+    margin-top: 25vh;
+  }
+
+  &.fire{
+    width: 80%;
+  }
+
+}
+
+
+video{
+
+  &.vuur{
+  margin-top: $padding;
+  width: 100%;
+  border-radius: 5px;
+  }
+
+  &.stars, &.moord{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+
+  &.earth{
+    margin-left: -40%;
+    width: 180%;
+    margin-top: 25vh;
+  }
+
+  &.eind{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    max-height: 100%;
+    z-index: -1;
+  }
+}
